@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home.com</title>
+    <style>
+        .container{
+           padding-left: 400px;
+           padding-right: 100px;
+        }
+        .row{
+            font-size: 20px;
+        }
+        .btn{
+            color: black;
+            background:lightcoral;
+            padding:10px 15px;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            transition: transform 0.5s;
+        }
+        .btn:hover{
+        background:red;
+        color: white;
+        transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome yo the Text Analyzer.Enter the text you want..</h1>
+      <div class="row">
+        
+        <form action='/analyzer' method='get'>
+            <textarea name='text' style='margin:0px;width:720px;height:200px;font-size: 20px;'></textarea>
+            <br>
+            <input type='checkbox' name='removep'>Remove Punctuation <br>
+            <input type="checkbox" name="capitalize">Capitalize <br>
+            <input type="checkbox" name="upper">UpperCase<br>
+            <input type="checkbox" name="lower">LowerCase <br>
+            <input type="checkbox" name="change">CaseChange <br>
+            <input type="checkbox" name="newline" id="">Remove NewLine <br> 
+            <input type="checkbox" name="extraspace" id="">Remove ExtraSpace <br>
+            <input type="checkbox" name="count" id="">Count Character 
+            <br>
+            <br>
+            <Button  class="btn" type="Submit">Analizer</Button>
+        </form>
+      </div>
+    </div>
+    
+</body>
+</html>
